@@ -5,25 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Gorjetas
-        <link rel="stylesheet" href="Calc-gorjeta.css">
     </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="container">
     <div>
-        <h1> <strong>Calculadora de Gorjetas</strong> </h1>
+        <h1 class="title"> <strong>Calculadora de Gorjetas</strong> </h1>
     </div>
     <div>
-        <form>
-            <fieldset >
+        <form class="tipsForm">
                 <label for="bill">
                     <p><strong>Quanto Ficou a conta?</strong></p>
                 </label>
-                <p>R$ <input type="number" placeholder="Qual o valor?" name="bill"></p>
+                <p>R$: <input type="number" placeholder="100" name="bill" min="0" class="formInput"></p>
                 <label for="serviceQual">
                     <p><strong>Como foi o serviço?</strong></p>
                 </label>
                 <p>
-                    <select required name="serviceQual" id="serviceQual">
+                    <select required name="serviceQual" id="serviceQual" class="formSelect">
                         <option disabled selected >Escolha uma opção</option>
                         <option value="0.3">30% - Excelente</option>
                         <option value="0.2">20% - Bom</option>
@@ -33,12 +33,12 @@
                     </select>
                 </p>
                 <p>
-                    <label for="people"> <strong>Quantas pessoas irão dividir a conta?</strong></label>
-                    <p><input type="number" placeholder="Quantas pessoas?" name="people" id="people">Pessoas</p>
+                    <label for="people" > <strong>Quantas pessoas irão dividir a conta?</strong></label>
+                    <p><input type="number" min="1" placeholder="5" name="people" id="people" class="formInput">Pessoas</p>
                 </p>
-                <button type="submit">Calcular</button>
-            </fieldset>           
+                <button type="submit" class="formSubmit">Calcular</button>         
         </form>
     </div>
+</div>
 </body>
 </html>
