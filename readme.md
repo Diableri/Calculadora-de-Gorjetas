@@ -1,1 +1,1 @@
-projetinho de uma calciladora de gorjetas, usando HTML, CSS e Javascript
+projetinho de uma calculadora de gorjetas, usando HTML, CSS e Javascript
